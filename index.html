@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>// PERSONAL DASHBOARD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Widget 1: Weather -->
+        <div class="widget" id="weatherWidget">
+            <div class="widget-header">🌦️ WEATHER</div>
+            <div class="widget-content">
+                <input type="text" id="cityInput" placeholder="Enter city">
+                <button id="getWeatherBtn">FETCH</button>
+                <div id="weatherResult">--</div>
+            </div>
+        </div>
+
+        <!-- Widget 2: Daily Quote -->
+        <div class="widget" id="quoteWidget">
+            <div class="widget-header">📜 QUOTE OF THE DAY</div>
+            <div class="widget-content">
+                <div id="quoteText">Click to load</div>
+                <button id="newQuoteBtn">NEW QUOTE</button>
+            </div>
+        </div>
+
+        <!-- Widget 3: Habit Tracker -->
+        <div class="widget" id="habitWidget">
+            <div class="widget-header">✅ HABIT TRACKER</div>
+            <div class="widget-content">
+                <div id="habitList"></div>
+                <div class="habit-input">
+                    <input type="text" id="newHabit" placeholder="New habit">
+                    <button id="addHabitBtn">+ ADD</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget 4: RA Missable Count -->
+        <div class="widget" id="raWidget">
+            <div class="widget-header">🎮 RA MISSABLE COUNT</div>
+            <div class="widget-content">
+                <div id="raResult">Not scanned</div>
+                <button id="scanRaBtn">SCAN MISSABLES</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>⎇ PERSONAL DASHBOARD // LOADED</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
